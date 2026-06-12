@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mega Karunia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="web.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <img src="Components/logo.png" alt="Mega Karunia Logo" class="logo" />
+      <span class="brand-name">Mega Karunia</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="slide">
+          <img src="Components/Wedding.png" alt="Pernikahan" />
+          <div class="slide-overlay">
+            <h2>Pernikahan</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="Components/Sekolah.png" alt="Pendidikan" />
+          <div class="slide-overlay">
+            <h2>Pendidikan</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="Components/Kerja.png" alt="Pekerjaan" />
+          <div class="slide-overlay">
+            <h2>Pekerjaan</h2>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous slide">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="carousel-arrow next" id="nextBtn" aria-label="Next slide">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="carousel-dots" id="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="hero-bar"></div>
+
+
+  <section class="services">
+    <h2 class="section-title">Menyediakan</h2>
+    <div class="services-grid">
+      <div class="service-card" onclick="openModal('modal-potong')">
+        <img src="Components/sisirkertas.png" alt="Sisir/Potong Kertas" />
+        <p>Sisir/Potong Kertas</p>
+      </div>
+      <div class="service-card" onclick="openModal('modal-kertas')">
+        <img src="Components/segalajeniskertas.jpg" alt="Segala jenis kertas" />
+        <p>Segala jenis kertas</p>
+      </div>
+      <div class="service-card" onclick="openModal('modal-undangan')">
+        <img src="Components/undangan.jpg" alt="Kebutuhan undangan" />
+        <p>Kebutuhan undangan</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="location">
+    <h2 class="section-title">Lokasi kami</h2>
+    <div class="location-card">
+      <img src="Components/fotorumah2.jpg" alt="Foto Toko Mega Karunia" class="location-img" />
+      <div class="location-info">
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          Jl. Arif Rahman Hakim No.37, Jagabaya III, Kec. Way Halim, Kota Bandar
+          Lampung, Lampung 35122 (sebelah rumah bakso)
+        </p>
+        <a
+          href="https://maps.app.goo.gl/QhoEhPcwqUgw31KY8?g_st=ic"
+          target="_blank"
+          rel="noopener"
+          class="map-button"
+          >View on Google Maps</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="hubungi-kami">
+    <h2 class="section-title">Hubungi Kami</h2>
+    <div class="contact-grid">
+      <div class="contact-card" data-phone="6288211295515">
+        <div class="wa-icon-circle"><i class="fab fa-whatsapp"></i></div>
+        <span>+62 882-1129-5515</span>
+      </div>
+      <div class="contact-card" data-phone="6282131312859">
+        <div class="wa-icon-circle"><i class="fab fa-whatsapp"></i></div>
+        <span>+62 821-3131-2859</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="vision">
+    <h2 class="section-title">Visi Kami</h2>
+    <div class="vision-container">
+      <div class="vision-line"></div>
+      <div class="vision-item">
+        <div class="vision-icon"><i class="fas fa-handshake"></i></div>
+        <p>Berkomitmen memberi pelayanan terbaik</p>
+      </div>
+      <div class="vision-item">
+        <div class="vision-icon"><i class="fas fa-box-open"></i></div>
+        <p>Menyediakan produk berkualitas</p>
+      </div>
+      <div class="vision-item">
+        <div class="vision-icon"><i class="fas fa-users"></i></div>
+        <p>Menyalurkan kebutuhan customer</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="Components/logo.png" alt="Mega Karunia Logo" class="footer-logo" />
+      <h3>Reach out to us!</h3>
+      <div class="footer-contact">
+        <p><i class="fas fa-envelope"></i> soegengkurniawan@gmail.com</p>
+        <p><i class="fas fa-phone"></i> (0721) 772991</p>
+        <p><i class="fab fa-whatsapp"></i> +62 882-1129-5515</p>
+        <p><i class="fab fa-whatsapp"></i> +62 821-3131-2859</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modal-potong">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal-potong')" aria-label="Close">
+        &times;
+      </button>
+      <h2 class="modal-title">Sering ditanyakan</h2>
+      <div class="modal-content">
+        <div class="faq-item">
+          <p class="faq-question">1. Apakah ada minimal potongan kertas?</p>
+          <p class="faq-answer">Ya, ada yaitu minimal ketebalan [...]</p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-question">
+            2. Apakah pemotongan kertas hanya terbatas pada jenis kertas tertentu?
+          </p>
+          <p class="faq-answer">
+            Tidak, asalkan sesuai dengan standar ketebalan dan ketentuan pemotongan
+          </p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-question">3. Proses pemotongan kertas perlu waktu berapa lama?</p>
+          <p class="faq-answer">
+            Tergantung ramainya pengunjung dan apakah mati lampu atau tidak
+          </p>
+        </div>
+      </div>
+      <p class="modal-footer">
+        <a
+          href="#hubungi-kami"
+          class="contact-link"
+          onclick="scrollToContact(event, 'modal-potong')"
+          >Hubungi Kami</a
+        >
+        untuk mendapatkan info
+      </p>
+    </div>
+  </div>
+
+
+  <div class="modal-overlay" id="modal-kertas">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal-kertas')" aria-label="Close">
+        &times;
+      </button>
+      <h2 class="modal-title">Sering ditanyakan</h2>
+      <div class="modal-content">
+        <div class="faq-item">
+          <p class="faq-question">1. Jenis kertas apa saja yang tersedia?</p>
+          <p class="faq-answer">
+            Tersedia berbagai jenis seperti HVS, Art Paper, Art Carton, Ivory, BC,
+            Concorde, dan banyak lainnya
+          </p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-question">2. Apakah bisa membeli dalam jumlah eceran?</p>
+          <p class="faq-answer">
+            Bisa, kami melayani pembelian eceran maupun grosir sesuai kebutuhan
+          </p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-question">3. Apakah tersedia kertas dengan ukuran custom?</p>
+          <p class="faq-answer">
+            Untuk ukuran custom, silakan konsultasikan langsung dengan kami melalui
+            WhatsApp
+          </p>
+        </div>
+      </div>
+      <p class="modal-footer">
+        <a
+          href="#hubungi-kami"
+          class="contact-link"
+          onclick="scrollToContact(event, 'modal-kertas')"
+          >Hubungi Kami</a
+        >
+        untuk mendapatkan info
+      </p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-undangan">
+    <div class="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal-undangan')" aria-label="Close">
+        &times;
+      </button>
+      <h2 class="modal-title">Sering ditanyakan</h2>
+      <div class="modal-content">
+        <div class="faq-item">
+          <p class="faq-question">1. Apa saja perlengkapan undangan yang tersedia?</p>
+          <p class="faq-answer">
+            Tersedia kertas undangan, pita, renda, amplop, dan berbagai aksesori
+            lainnya
+          </p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-question">2. Apakah bisa custom desain undangan?</p>
+          <p class="faq-answer">
+            Bisa, silakan diskusikan kebutuhan desain Anda dengan kami
+          </p>
+        </div>
+        <div class="faq-item">
+          <p class="faq-question">3. Berapa lama proses pembuatan undangan?</p>
+          <p class="faq-answer">
+            Tergantung jumlah pesanan dan kerumitan desain, biasanya 3-7 hari kerja
+          </p>
+        </div>
+      </div>
+      <p class="modal-footer">
+        <a
+          href="#hubungi-kami"
+          class="contact-link"
+          onclick="scrollToContact(event, 'modal-undangan')"
+          >Hubungi Kami</a
+        >
+        untuk mendapatkan info
+      </p>
+    </div>
+  </div>
+
+  <script src="web.js"></script>
+</body>
+</html>
